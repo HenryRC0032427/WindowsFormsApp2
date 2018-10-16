@@ -94,16 +94,16 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(288, 169);
+            this.label13.Location = new System.Drawing.Point(298, 165);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.Size = new System.Drawing.Size(21, 13);
             this.label13.TabIndex = 17;
-            this.label13.Text = "label13";
+            this.label13.Text = "R4";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(288, 121);
+            this.label12.Location = new System.Drawing.Point(298, 117);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(21, 13);
             this.label12.TabIndex = 16;
@@ -112,7 +112,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(288, 79);
+            this.label11.Location = new System.Drawing.Point(298, 75);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(21, 13);
             this.label11.TabIndex = 15;
@@ -121,7 +121,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(288, 41);
+            this.label10.Location = new System.Drawing.Point(298, 37);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(21, 13);
             this.label10.TabIndex = 14;
@@ -188,9 +188,9 @@
             // 
             this.button1.Location = new System.Drawing.Point(510, 90);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(116, 23);
             this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
+            this.button1.Text = "Calculate button";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -263,6 +263,7 @@
             this.Controls.Add(this.Seriestab);
             this.Name = "Series";
             this.Text = "Series";
+            this.Load += new System.EventHandler(this.Series_Load);
             this.Seriestab.ResumeLayout(false);
             this.SeiesTab.ResumeLayout(false);
             this.SeiesTab.PerformLayout();
