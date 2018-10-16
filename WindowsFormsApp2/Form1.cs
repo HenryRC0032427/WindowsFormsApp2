@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class Form1 : Form
+    public partial class Series : Form
     {
-        public Form1()
+        public Series()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Double R = Convert.ToDouble(TextBox1.Text);
+
+            Double T = R + R;
+            label1.Text = "Total resistance = " T
         }
     }
 }
