@@ -19,10 +19,18 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Double R = Convert.ToDouble(TextBox1.Text);
+            Double R = Convert.ToDouble(textBox1.Text);
 
             Double T = R + R;
-            label1.Text = "Total resistance = " T
+            label1.Text = "Total resistance = " + T;
+            T = T + R;
+            label2.Text = "Total resistance = " + T;
+            T = T + R;
+            label3.Text = "Total resistance = " + T;
+            T = T + R;
+            label4.Text = "Total resistance = " + T;
+
+
         }
     }
 }
