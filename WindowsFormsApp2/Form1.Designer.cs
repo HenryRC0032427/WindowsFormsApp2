@@ -61,6 +61,7 @@
             // 
             // Seriestab
             // 
+            this.Seriestab.AccessibleName = "Series Tab";
             this.Seriestab.Controls.Add(this.SeiesTab);
             this.Seriestab.Controls.Add(this.tabPage2);
             this.Seriestab.Location = new System.Drawing.Point(0, 0);
@@ -68,6 +69,7 @@
             this.Seriestab.SelectedIndex = 0;
             this.Seriestab.Size = new System.Drawing.Size(797, 446);
             this.Seriestab.TabIndex = 0;
+            this.Seriestab.Tag = "Series Tab";
             // 
             // SeiesTab
             // 
@@ -100,7 +102,7 @@
             this.SeiesTab.Padding = new System.Windows.Forms.Padding(3);
             this.SeiesTab.Size = new System.Drawing.Size(789, 420);
             this.SeiesTab.TabIndex = 0;
-            this.SeiesTab.Text = "tabPage1";
+            this.SeiesTab.Text = "Series";
             this.SeiesTab.UseVisualStyleBackColor = true;
             // 
             // label13
@@ -163,7 +165,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(264, 331);
+            this.label9.Location = new System.Drawing.Point(349, 331);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(118, 13);
             this.label9.TabIndex = 10;
@@ -172,7 +174,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(264, 299);
+            this.label8.Location = new System.Drawing.Point(349, 299);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(145, 13);
             this.label8.TabIndex = 9;
@@ -183,18 +185,18 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(27, 331);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 13);
+            this.label7.Size = new System.Drawing.Size(261, 13);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Parallel - 1/RT = 1/R1 + 1/R2 + 1/R3";
+            this.label7.Text = "Parallel - 1/RT = 1/R1 + 1/R2 + 1/R3 + 1/R4 + 1/R5";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(27, 299);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 13);
+            this.label6.Size = new System.Drawing.Size(190, 13);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Series - RT = R1 + R2 + R3";
+            this.label6.Text = "Series - RT = R1 + R2 + R3 + R4 + R5";
             // 
             // button1
             // 
@@ -264,7 +266,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(789, 420);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Parallel";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label14
