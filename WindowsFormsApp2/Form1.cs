@@ -57,14 +57,23 @@ namespace WindowsFormsApp2
                 R4 = 0;
             } 
 
+            try
+            {
+                R5 = Convert.ToDouble(textBox5.Text);
+            }
+            catch
+            {
+                R5 = 0;
+            }
 
-            Double T = R1;
+
+            Double T = R1 + R2;
             label15.Text = "Total resistance = " + T;
-            T =  R1 + R2;
+            T =  R1 + R2+ R3;
             label16.Text = "Total resistance = " + T;
-            T = R1 + R2 + R3;
-            label17.Text = "Total resistance = " + T;
             T = R1 + R2 + R3 + R4;
+            label17.Text = "Total resistance = " + T;
+            T = R1 + R2 + R3 + R4 + R5;
             label18.Text = "Total resistance = " + T;
 
 
