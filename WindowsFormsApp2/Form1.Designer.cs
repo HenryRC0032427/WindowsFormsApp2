@@ -55,8 +55,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Seriestab.SuspendLayout();
             this.SeiesTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Seriestab
@@ -73,6 +75,7 @@
             // 
             // SeiesTab
             // 
+            this.SeiesTab.Controls.Add(this.pictureBox1);
             this.SeiesTab.Controls.Add(this.label18);
             this.SeiesTab.Controls.Add(this.label17);
             this.SeiesTab.Controls.Add(this.label16);
@@ -322,6 +325,16 @@
             this.label18.TabIndex = 23;
             this.label18.Text = "answer";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.Series;
+            this.pictureBox1.Location = new System.Drawing.Point(564, 205);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(196, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Series
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,6 +347,7 @@
             this.Seriestab.ResumeLayout(false);
             this.SeiesTab.ResumeLayout(false);
             this.SeiesTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -367,6 +381,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
