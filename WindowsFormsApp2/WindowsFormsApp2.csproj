@@ -82,5 +82,8 @@
   <ItemGroup>
     <None Include="Resources\Series.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parallel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -80,25 +80,66 @@ namespace WindowsFormsApp2
 
         }
 
-        private void Series_Load(object sender, EventArgs e)
+
+
+        private void button2_Click(object sender, EventArgs e)
         {
+            double R1, R2, R3, R4, R5;
 
-        }
+            try
+            {
+                R1 = Convert.ToDouble(textBox6.Text);
+            }
+            catch
+            {
+                R1 = Double.PositiveInfinity;
+            }
 
-        private void label16_Click(object sender, EventArgs e)
-        {
+            try
+            {
+                R2 = Convert.ToDouble(textBox7.Text);
+            }
+            catch
+            {
+                R2 = Double.PositiveInfinity;
+            }
 
-        }
+            try
+            {
+                R3 = Convert.ToDouble(textBox8.Text);
+            }
+            catch
+            {
+                R3 = Double.PositiveInfinity;
+            }
 
-        private void label20_Click(object sender, EventArgs e)
-        {
+            try
+            {
+                R4 = Convert.ToDouble(textBox9.Text);
+            }
+            catch
+            {
+                R4 = Double.PositiveInfinity;
+            }
+
+            try
+            {
+                R5 = Convert.ToDouble(textBox10.Text);
+            }
+            catch
+            {
+                R5 = Double.PositiveInfinity;
+            }
 
 
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
+            double T = 1/(1 / R1 + 1 / R2);
+            label20.Text = "Total resistance = " + T;
+            T = 1/(1 / R1 + 1 / R2 + 1 / R3);
+            label22.Text = "Total resistance = " + T;
+            T = 1/(1 / R1 + 1 / R2 + 1 / R3 + 1 / R4);
+            label24.Text = "Total resistance = " + T;
+            T = 1/(1 / R1 + 1 / R2 + 1 / R3 + 1 / R4 + 1 / R5);
+            label26.Text = "Total resistance = " + T;
 
         }
     }
