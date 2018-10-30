@@ -67,6 +67,7 @@ namespace WindowsFormsApp2
             }
 
 
+
             Double T = R1 + R2;
             label15.Text = "Total resistance = " + T;
             T =  R1 + R2+ R3;
