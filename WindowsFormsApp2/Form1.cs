@@ -17,8 +17,10 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
+        //series circuit
         private void button1_Click(object sender, EventArgs e)
         {
+            //assigning values to resistors with try catch
             double R1, R2, R3, R4, R5;
 
             try
@@ -67,7 +69,7 @@ namespace WindowsFormsApp2
             }
 
 
-
+            //calculating total resistance in a series circuit
             Double T = R1 + R2;
             label15.Text = "Total resistance = " + T;
             T =  R1 + R2+ R3;
@@ -82,9 +84,10 @@ namespace WindowsFormsApp2
         }
 
 
-
+        //Parallel circuit
         private void button2_Click(object sender, EventArgs e)
         {
+            //assigning values to resistors with try catch
             double R1, R2, R3, R4, R5;
 
             try
@@ -132,7 +135,7 @@ namespace WindowsFormsApp2
                 R5 = Double.PositiveInfinity;
             }
 
-
+            //calculating total resistance in a parallel circuit
             double T = 1/(1 / R1 + 1 / R2);
             label20.Text = "Total resistance = " + T;
             T = 1/(1 / R1 + 1 / R2 + 1 / R3);
